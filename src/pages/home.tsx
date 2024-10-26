@@ -60,8 +60,8 @@ const HomePage = () => {
                 </Container>
             </section>
             <Divider />
-            <section>
-                <Container ref={expRef}>
+            <section ref={expRef}>
+                <Container >
                     <Experience />
                 </Container>
             </section>
