@@ -7,9 +7,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import HomePage from 'pages/home.tsx';
-import ProjectPage from 'pages/project';
-import AboutPage from 'pages/about';
-import { AppContextProvider } from 'components/context/app.context';
+import ProjectPage from '@/pages/project';
+import AboutPage from '@/pages/about';
+import { AppContextProvider } from '@/components/context/app.context';
 import '@/i18n.ts';
 
 const router = createBrowserRouter([
