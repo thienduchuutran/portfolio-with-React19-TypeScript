@@ -9,12 +9,15 @@ import { useTranslation } from "react-i18next";
 import Divider from "components/sections/divider";
 import Experience from "components/sections/experience";
 import Skill from "components/sections/skill";
+import { useRef } from "react";
 
 const HomePage = () => {
     const { t } = useTranslation();
 
+    const expRef = useRef<HTMLElement>(null) //null here is initial state
+
     const scrollToExperienceSection = () => {
-        alert(" hi")
+        expRef.current?.scrollIntoView({behavior: "smooth"})
     }
 
     return (
@@ -58,7 +61,7 @@ const HomePage = () => {
             </section>
             <Divider />
             <section>
-                <Container>
+                <Container ref={expRef}>
                     <Experience />
                 </Container>
             </section>
