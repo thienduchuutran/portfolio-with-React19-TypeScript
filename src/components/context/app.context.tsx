@@ -4,7 +4,7 @@ interface IAppContext {
     theme: ThemeContextType;
     setTheme: (v: ThemeContextType) => void;
 }
-type ThemeContextType = "light" | "dark"
+type ThemeContextType = "dark" | "light"
 type LangType = "vi" | "en"
 
 
@@ -12,7 +12,7 @@ const AppContext = createContext<IAppContext | null>(null);
 
 export const AppContextProvider = ({children}: {children: React.ReactNode}) => {
     const [theme, setTheme] = useState<ThemeContextType>(() => {
-        const initialTheme = localStorage.getItem("theme") as ThemeContextType || "dark";
+        const initialTheme = (localStorage?.getItem("theme") ?? "dark") as ThemeContextType;
         return initialTheme;
     });
 
