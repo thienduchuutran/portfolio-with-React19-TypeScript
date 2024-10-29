@@ -1,6 +1,6 @@
 import { Col, Row } from 'react-bootstrap';
 import Tilt from "react-parallax-tilt";
-import avatarImg from "assets/avatar.svg";
+import avatarImg from "assets/duclogo.jpg";
 import './introduction.scss';
 import { useTranslation } from 'react-i18next';
 
@@ -25,35 +25,29 @@ const Introduction = () => {
                     <p>
                         {t("introSection.heading1")}
                         <br />
-                        <br />{t("introSection.heading2")}
+                        <br />
                         <i>
-                            <b className='text-pink-100'> Java {t("introSection.and")} Javascript. </b>
+                            <b className='text-pink-100'> JavaScript {t("introSection.vs")} TypeScript </b>
                         </i>
-                        <br />
-                        <br />
-                        {t("introSection.heading3")} &nbsp;
+                        {t("introSection.heading2")}
                         <i>
-                            <b className='text-pink-100'>
+                            <b className='text-pink-100'> ReactJS - Node.js {t("introSection.vs")} ExpressJS {t("introSection.vs")} NestJS </b>
+                        </i>
+                        {t("introSection.heading3")} &nbsp;
+                        <br/>
+                        <br/>
+                        <i>
+                            <b>
                                 {t("introSection.heading4")}
                             </b>
                         </i>
                         <br />
-                        <br />
-                        {t("introSection.heading5")}
-                        <i><b className='text-pink-100'>&nbsp;Java Spring</b> </i>
-                        {t("introSection.and")}
-                        <i>
-                            <b className='text-pink-100'>
-                                {" "}
-                                Node.js
-                            </b>
-                        </i>
 
                     </p>
                 </Col>
                 <Col md={3} className='d-md-block d-none'>
                     <Tilt>
-                        <img src={avatarImg} className="img-fluid" alt="avatar" />
+                        <img src={avatarImg} style={{borderRadius: "100%"}} className="img-fluid" alt="avatar" />
                     </Tilt>
                 </Col>
             </Row>

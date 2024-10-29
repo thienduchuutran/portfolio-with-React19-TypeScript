@@ -1,5 +1,5 @@
 import { SKILLS_DATA } from "helpers/data";
-import { skillsImage } from "helpers/skill.image";
+import { skillsImage } from "@/helpers/skill.image";
 import Marquee from "react-fast-marquee";
 import './skill.scss';
 import { Col, Row } from "react-bootstrap";
@@ -17,7 +17,7 @@ const Skill = () => {
             <Col xs={12} className="skills-marquee">
                 <Marquee
                     gradient={false}
-                    speed={50}
+                    speed={125}
                     pauseOnHover={true}
                     pauseOnClick={true}
                     delay={0}

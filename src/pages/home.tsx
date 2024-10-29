@@ -6,7 +6,7 @@ import bg from 'assets/section.svg';
 import Introduction from "components/sections/introduction";
 import ResizeButton from "components/sections/resize.button";
 import { useTranslation } from "react-i18next";
-import Divider from "components/sections/divider";
+import Divider from "@/components/sections/divider";
 import Experience from "components/sections/experience";
 import Skill from "components/sections/skill";
 import { useRef } from "react";

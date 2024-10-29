@@ -1,22 +1,23 @@
 {
     "appHeader": {
-        "brand": "Hoi Dan IT",
+        "brand": "Duc Tran",
         "home": "Home",
-        "project": "Project",
+        "project": "Projects",
         "contact": "Contact",
         "about": "About"
     },
     "heroSection": {
-        "exp": "My Skill",
-        "cv": "Get Resume"
+        "exp": "My experiences",
+        "cv": "View my Resume"
     },
     "introSection": {
         "about": "About me",
+        "vs": "/",
         "and": "and",
-        "heading1": "I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️",
-        "heading2": "I am fluent in classics like",
-        "heading3": "My field of Interest's are building new",
-        "heading4": "Web Technologies and Products",
+        "heading1": "I'm a prospective CS student and currently at 3rd year in college with fundamental knowledge of Web Development. Growing to have deep understanding and be knowledgeable in OOP pattern, solving problems with algorithms and data structures.",
+        "heading2": "and the fullstack combo",
+        "heading3": "frameworks are my area of specialty.",
+        "heading4": "Let's connect!",
         "heading5": "Whenever possible, I also apply my passion for developing products with"
     },
     "experience": {
@@ -24,5 +25,32 @@
     },
     "skill": {
         "title": "Skills"
+    },
+    "hero": {
+        "name": "Duc Tran"
+    },
+    "projects": {
+        "header": "My Recent",
+        "work": "Work",
+        "description": "Here are a few projects I've worked on recently."
+    },    
+    "about": {
+        "title": "Know who",
+        "who": "I am",
+        "description1": "Duc Tran is currently pursuing a Bachelor's degree in Computer Science at Fitchburg State University, Fitchburg, Massachusetts.",
+        "act1": "Bible",
+        "act2": "Soccer",
+        "act3": "Solving Leetcode problems",
+        "act4": "Cooking",
+        "flex": "Duc is currently in his third year and having 3.96/4.0 GPA",
+        "wish": "Duc is graduating in May 2026 and is actively seeking an internship opportunity for summer 2025",
+        "side": "Apart from coding, some other activities that Duc enjoys spending time",
+        "verse": "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters",
+        "destination": "Colossians 3:23",
+        "education": "Education",
+        "degree": "Bachelor of Science, Computer Science",
+        "school": "Fitchburg State University (Massachusetts, USA)",
+        "connect": "Find me on"
+
     }
 }

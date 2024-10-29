@@ -1,7 +1,9 @@
 import './hero.scss';
+import { useTranslation } from 'react-i18next';
+
 
 const HeroRight = () => {
-
+    const { t } = useTranslation();
     return (
         <div className='hero-right'>
             <div className='border-top'></div>
@@ -21,33 +23,37 @@ const HeroRight = () => {
                     <div>
                         <span className="ms-4 me-2">name:</span>
                         <span className='text-yellow-500'>
-                            {`'`}Hỏi Dân IT{`',`}
+                            {`'`}{t("hero.name")}{`',`}
                         </span>
                     </div>
                     <div className="ms-4 me-2 text-pink-200">
                         <span className="text-white-0">skills:</span>
                         <span>{`['`}</span>
+                        <span >JavaScript / TypeScript</span>
+                        <span>{"', '"}</span>
+                        <span >Python</span>
+                        <span>{"', '"}</span>
                         <span >React</span>
                         <span>{"', '"}</span>
                         <span >Redux</span>
                         <span>{"', '"}</span>
-                        <span >NextJS</span>
+                        <span >Node.js</span>
                         <span>{"', '"}</span>
-                        <span >Java Spring</span>
+                        <span >Express.js</span>
                         <span>{"', '"}</span>
                         <span >NestJS</span>
                         <span>{"', '"}</span>
-                        <span >NoSQL</span>
+                        <span >MongoDB</span>
                         <span>{"', '"}</span>
-                        <span >SQL</span>
+                        <span >MySQL</span>
                         <span>{"', '"}</span>
                         <span >Docker</span>
                         <span>{"', '"}</span>
-                        <span >K8S</span>
+                        <span >Git / Github</span>
                         <span>{"'],"}</span>
                     </div>
                     <div>
-                        <span className="ms-4  me-2 ">hardWorker:</span>
+                        <span className="ms-4  me-2 ">smartWorker:</span>
                         <span className="text-red-500">true</span>
                         <span>,</span>
                     </div>
@@ -84,7 +90,7 @@ const HeroRight = () => {
                         <span className="ms-5 ps-3 text-blue-100">this.</span>
                         <span className="me-2">skills.length</span>
                         <span className="me-2 text-blue-100">&gt;=</span>
-                        <span className="text-red-500">5</span>
+                        <span className="text-red-500">10</span>
                     </div>
                     <div><span className="ms-5 me-2 ">{`);`}</span></div>
                     <div><span className="ms-4">{`};`}</span></div>

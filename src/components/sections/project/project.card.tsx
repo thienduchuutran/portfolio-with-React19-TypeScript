@@ -9,7 +9,7 @@ interface IProps {
     title: string;
     description: string;
     githubLink: string;
-    demoLink: string;
+    demoLink?: string;
 }
 
 function ProjectCard(props: IProps) {
@@ -20,6 +20,7 @@ function ProjectCard(props: IProps) {
                 <Card.Title>
                     {props.title}
                 </Card.Title>
+                &nbsp;
                 <div className="d-flex flex-column justify-content-between h-100">
                     <Card.Text style={{ textAlign: "justify" }}>
                         {props.description}
@@ -27,10 +28,10 @@ function ProjectCard(props: IProps) {
                     <div>
                         <Button variant="primary" href={props.githubLink} target="_blank">
                             <BsGithub /> &nbsp;
-                            "GitHub"
+                            GitHub
                         </Button>
 
-                        <Button
+                        {/* <Button
                             variant="primary"
                             href={props.demoLink}
                             target="_blank"
@@ -38,7 +39,7 @@ function ProjectCard(props: IProps) {
                         >
                             <CgWebsite /> &nbsp;
                             {"Demo"}
-                        </Button>
+                        </Button> */}
 
                     </div>
                 </div>

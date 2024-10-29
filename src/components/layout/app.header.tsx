@@ -11,6 +11,7 @@ import viFlag from 'assets/svg/language/vi.svg';
 import enFlag from 'assets/svg/language/en.svg';
 
 type ThemeContextType = "light" | "dark"
+type LangType = "vi" | "en"
 
 function AppHeader() {
     const { theme, setTheme } = useCurrentApp();
@@ -20,6 +21,12 @@ function AppHeader() {
         localStorage.setItem("theme", mode);
         document.documentElement.setAttribute('data-bs-theme', mode);
         setTheme(mode);
+    }
+
+    const handleLanguage = (lang: LangType) => {
+        i18n.changeLanguage(lang)
+        localStorage.setItem("lang", lang);
+        document.documentElement.setAttribute('data-bs-lang', lang);
     }
 
     const renderFlag = (language: string) => {
@@ -36,7 +43,10 @@ function AppHeader() {
             data-bs-theme={theme}
             expand="lg"
             className="bg-body-tertiary"
-            style={{ zIndex: 1 }}
+            style={{ zIndex: 10,
+                position: 'sticky',
+                top: 0
+             }}
         >
             <Container>
                 <Link className="navbar-brand" to="/">
@@ -70,7 +80,7 @@ function AppHeader() {
                             title={renderFlag(i18n.resolvedLanguage!)}
                         >
                             <div
-                                onClick={() => i18n.changeLanguage("en")}
+                                onClick={() => handleLanguage("en")}
                                 className='dropdown-item d-flex gap-2 align-items-center' style={{ cursor: "pointer" }}>
                                 <img
                                     style={{ height: 20, width: 20 }}
@@ -80,7 +90,7 @@ function AppHeader() {
 
                             </div>
                             <div
-                                onClick={() => i18n.changeLanguage("vi")}
+                                onClick={() => handleLanguage("vi")}
                                 className='dropdown-item d-flex gap-2 align-items-center' style={{ cursor: "pointer" }}>
                                 <img
                                     style={{ height: 20, width: 20 }}

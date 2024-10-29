@@ -23,32 +23,31 @@ const HeroLeft = (props: IProps) => {
                 </span>
             </h3>
             <h3 style={{ paddingTop: 10, paddingBottom: 5 }}>
-                I'M &nbsp;
+                I'm&nbsp;
                 <strong className="brand-red">{t("appHeader.brand")}</strong>
             </h3>
             <Typewriter
                 options={{
                     strings: [
-                        "Software Developer",
-                        "Freelancer",
-                        "MERN Stack Developer",
-                        "Open Source Contributor",
+                        "Computer Science student",
+                        "Web Developer",
+                        "3.96 GPA holder",
+                        "Eager Leaner",
                     ],
                     autoStart: true,
                     loop: true,
-                    deleteSpeed: 50,
+                    deleteSpeed: 20,
                     wrapperClassName: "brand-green"
                 }}
             />
             <div
                 className="mt-md-6 mt-3 mb-md-5 mb-2"
             >
-                <SocialMedia
-                    youtube={APP_DATA.YOUTUBE_URL}
-                    facebook={APP_DATA.FACEBOOK_URL}
-                    tiktok={APP_DATA.TIKTOK_URL}
-                    udemy={APP_DATA.UDEMY_URL}
-                />
+                    <SocialMedia
+                        github={APP_DATA.GITHUB_URL}
+                        linkedin={APP_DATA.LINKEDIN_URL}
+                        gmail={APP_DATA.GMAIL_URL}
+                    />
             </div>
             <div className="d-md-flex d-none gap-4">
                 <ResizeButton

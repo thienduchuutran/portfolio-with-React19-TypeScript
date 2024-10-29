@@ -1,22 +1,22 @@
 {
     "appHeader": {
-        "brand": "Hỏi Dân IT",
+        "brand": "Thiên Đức",
         "home": "Trang chủ",
         "project": "Dự án",
         "contact": "Liên hệ",
-        "about": "Về tác giả"
+        "about": "Về Đức"
     },
     "heroSection": {
         "exp": "Kinh nghiệm",
-        "cv": "Tải Resume"
+        "cv": "Xem Resume của Đức"
     },
     "introSection": {
         "about": "Giới thiệu",
         "and": "và",
-        "heading1": "Yêu đơn phương lập trình và tôi tin rằng mình đã học hỏi được ít nhiều điều gì đó. 🤷‍♂️",
-        "heading2": "Tôi nắm vững các ngôn ngữ huyền thoại như là",
-        "heading3": "Lĩnh vực quan tâm của tôi là",
-        "heading4": "xây dựng các công nghệ web mới và các sản phẩm liên quan",
+        "heading1": "Đức là sinh viên năm 3 ngành Khoa học Máy tính, có kiến thức nền tảng về lập trình hướng đối tượng, giải thuật và cấu trúc dữ liệu. Đức ngày ngày dành thời gian nâng cao kiến thức chuyên sâu về phát triển web và công nghệ phần mềm.",
+        "heading2": "cùng bộ full-stack",
+        "heading3": "là thế mạnh của Đức",
+        "heading4": "Rất mong được kết nối!",
         "heading5": "Bất cứ khi nào có thể, tôi cũng áp dụng niềm đam mê phát triển sản phẩm của mình với"
     },
     "experience": {
@@ -24,5 +24,33 @@
     },
     "skill": {
         "title": "Kỹ năng"
+    },
+    "hero": {
+        "name": "Thiên Đức"
+    },
+    "projects": {
+        "header": "Những dự án",
+        "work": "gần đây",
+        "description": "Đây là những dự án hoàn chỉnh gần nhất"
+    },    
+    "about": {
+        "title": "Biết Đức",
+        "who": "là ai",
+        "description1": "Thiên Đức hiện tại đang theo học chương trình cử nhân ngành Khoa Học Máy Tính tại đại học Fitchburg State, Fitchburg, Massachusetts",
+        "act1": "Kinh Thánh",
+        "act2": "Đá banh",
+        "act3": "Luyện thuật toán trên Leetcode",
+        "act4": "Nấu ăn",
+        "flex": "Đức hiện đang là sinh viên năm 3 và có GPA 3.96 trên thang 4.0",
+        "wish": "Đức sẽ tốt nghiệp vào tháng 5/2026 và hiện đang tìm kiếm cơ hội thực tập cho mùa hè 2025",
+        "side": "Ngoài ngày ngày mò code thì Đức cũng có những sở thích khác",
+        "verse": "Hễ làm việc gì, hãy hết lòng mà làm, như làm cho Chúa, chớ không phải làm cho người ta",
+        "destination": "Cô-lô-se 3:23",
+        "education": "Bằng Cấp",
+        "degree": "Cử nhân ngành Khoa Học Máy Tính",
+        "school": "Đại học Fitchburg State (Massachusetts, Mỹ)",
+        "connect": "Kết nối với Đức"
+
+
     }
 }

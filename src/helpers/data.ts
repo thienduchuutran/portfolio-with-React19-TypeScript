@@ -1,14 +1,11 @@
 import nestImg from 'assets/project/nestjs.png';
-import nextjsImg from 'assets/project/nextjs.jpeg';
-import reactNativeImg from 'assets/project/react-native.png';
 import reactUltimateImg from 'assets/project/react-ultimate.png';
-import springMvcImg from 'assets/project/spring-mvc.png';
-import springRestImg from 'assets/project/spring-rest.png';
+
 
 export const APP_DATA = {
-    YOUTUBE_URL: "https://www.youtube.com/@hoidanit",
-    TIKTOK_URL: "https://www.tiktok.com/@hoidanit",
-    UDEMY_URL: "https://www.udemy.com/user/eric-7039/",
+    GITHUB_URL: "https://github.com/thienduchuutran",
+    LINKEDIN_URL: "https://www.linkedin.com/in/duc-tran-277564229/",
+    GMAIL_URL: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzDCttwcZNnTlZPbHgdhtdslGccsqJjtWFGZJNjjtLQqGScJbVPdlFzHBkhWxCFClDVBKsv",
     FACEBOOK_URL: "https://www.facebook.com/askITwithERIC/"
 }
 
@@ -16,47 +13,47 @@ export const EXPERIENCES = [
     {
         id: 1,
         title: {
-            vi: "Lập Trình Viên",
-            en: "Fullstack Developer"
+            vi: "Kỹ thuật viên hỗ trợ IT",
+            en: "IT help desk technician"
         },
         company: {
-            vi: "Công ty ABCXYZ Ltd.",
-            en: "ABCXYZ Ltd."
+            vi: "Trường đại học Fitchburg State - Khoa Công Nghệ Thông Tin",
+            en: "Fitchburg State University - Technology Department"
         },
         duration: {
-            vi: "Jan 2024 - Hiện tại",
-            en: "Jan 2024 - Present"
+            vi: "Tháng 9/2023 - Hiện tại",
+            en: "September 2023 - Present"
         }
     },
     {
         id: 2,
         title: {
-            vi: "Lập Trình Viên",
-            en: "Fullstack Developer"
+            vi: "Trợ lý ký túc xá",
+            en: "Resident Assistant"
         },
 
         company: {
-            vi: "Công ty F (freelancer)",
-            en: "F (freelancer)"
+            vi: "Trường đại học Fitchburg State - Ban quản lý ký túc xá",
+            en: "Fitchburg State University - Housing & Residential Services"
         },
         duration: {
-            vi: "Tháng 6/2022 - Tháng 1/2024",
-            en: "Jun 2022 - Jan 2024"
+            vi: "Tháng 1/2023 - Hiện tại",
+            en: "Jan 2023 - Present"
         }
     },
     {
         id: 3,
         title: {
-            vi: "Dự án tự làm",
-            en: "Self Employed"
+            vi: "Dạy kèm Toán Giải tích",
+            en: "Calculus Tutor"
         },
         company: {
-            vi: "Học kiến thức mới mỗi ngày",
-            en: "Code and build something in everyday."
+            vi: "Trường đại học Fitchburg State - Trung tâm gia sư",
+            en: "Fitchburg State University - Tutor Center"
         },
         duration: {
-            vi: "Tháng 1/2020 - Hiện tại",
-            en: "Jan 2020 - Present"
+            vi: "Tháng 1/2023 - Tháng 5/2023",
+            en: "Jan 2023 - May 2023"
         }
     }
 ]
@@ -64,52 +61,32 @@ export const EXPERIENCES = [
 export const PROJECTS = [
     {
         id: 1,
-        imgPath: reactNativeImg,
-        title: "React Native Basic",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/react-native-ultimate-phat-trien-ung-dung-mobile-66e7ab4578aaf477418cb538.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/react-native-ultimate-phat-trien-ung-dung-mobile-66e7ab4578aaf477418cb538.html"
+        imgPath: reactUltimateImg,
+        title: {
+            vi: "Website đặt lịch khám bác sĩ đa ngôn ngữ",
+            en: "Multi-Language Healthcare Booking Website"
+        },
+        description: {
+            vi: 'Khách và người dùng đã đăng nhập có thể xem thông tin về các phòng khám, chuyên khoa và bác sĩ, đồng thời đặt lịch hẹn với bác sĩ. Bác sĩ có thể lên lịch các khung giờ có sẵn cho các cuộc hẹn. Quản trị viên có thể tạo, cập nhật và xóa dữ liệu về bác sĩ, chuyên khoa và phòng khám.',
+            en: 'Guests and signed-in users can view clinics, specialties and doctors information, and book appointments with doctors. Doctors can schedule available times for appointments. Admin can Create, Update and Delete doctors, specialties and clinics data.'
+        },
+        githubLink: "https://github.com/thienduchuutran/firstFullStackProject-BookingCare.git",
+        demoLink: "https://hoidanit.vn/khoa-hoc/react-ultimate-react-co-ban-tu-z-toi-a-640b50b96cc592d780aab976.html"
     },
     {
         id: 2,
-        imgPath: springRestImg,
-        title: "Java Spring REST",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/java-spring-rest-ultimate-for-beginners-6631cb577353ab6861b188f6.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/java-spring-rest-ultimate-for-beginners-6631cb577353ab6861b188f6.html"
-    },
-    {
-        id: 3,
-        imgPath: springMvcImg,
-        title: "Java Spring MVC",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/java-spring-mvc-ultimate-for-beginners-65ce0b770c05f4450fbd86ac.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/java-spring-mvc-ultimate-for-beginners-65ce0b770c05f4450fbd86ac.html"
-    },
-    {
-        id: 4,
-        imgPath: nextjsImg,
-        title: "React ProMax with Next.js",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/react-pro-max-voi-nextjs-lam-chu-toan-dien-reactjs-hien-dai-65198100e6bafa8caad417a6.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/react-pro-max-voi-nextjs-lam-chu-toan-dien-reactjs-hien-dai-65198100e6bafa8caad417a6.html"
-    },
-    {
-        id: 5,
         imgPath: nestImg,
-        title: "Nest.js Basic",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/nestjs-voi-typescript-mongodb-sieu-de-64686ec6fb456bbb90663dd6.html",
+        title: {
+            vi: "Website đăng tin tuyển dụng",
+            en: "Job Posting Website"
+        },
+        description: {
+            vi: 'Khách và người dùng đã đăng nhập có thể xem các tin tuyển dụng, công ty đang tuyển dụng và lọc tin tuyển dụng dựa trên kỹ năng. Nhân sự có thể xem và cập nhật trạng thái ứng tuyển. Quản trị viên có toàn quyền kiểm soát về cấp quyền người dùng.',
+            en: 'Guests and signed-in users can view job posts, companies hiring, and filter job posts based on skills. HR can view and update application status. Admin has full authorities on user authorization.'
+        },
+        githubLink: "https://github.com/thienduchuutran/gettingStartedWithNestJS",
         demoLink: "https://hoidanit.vn/khoa-hoc/nestjs-voi-typescript-mongodb-sieu-de-64686ec6fb456bbb90663dd6.html"
     },
-    {
-        id: 6,
-        imgPath: reactUltimateImg,
-        title: "React Ultimate",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        githubLink: "https://hoidanit.vn/khoa-hoc/react-ultimate-react-co-ban-tu-z-toi-a-640b50b96cc592d780aab976.html",
-        demoLink: "https://hoidanit.vn/khoa-hoc/react-ultimate-react-co-ban-tu-z-toi-a-640b50b96cc592d780aab976.html"
-    }
 ]
 
 export const SKILLS_DATA = [
@@ -117,22 +94,18 @@ export const SKILLS_DATA = [
     'CSS',
     'Javascript',
     'Typescript',
+    'Python',
     'React',
-    'Next JS',
-    'Tailwind',
+    'Redux',
+    'Node.js',
+    'Express.js',
+    'NestJS',
+    'Bootstrap',
     'MongoDB',
     'MySQL',
     'PostgreSQL',
     'Git',
-    'AWS',
-    'Bootstrap',
     'Docker',
-    'Go',
-    'Figma',
-    'Firebase',
-    'MaterialUI',
-    'Nginx',
-    'Strapi'
   ]
   
   // Choose your skills from below. Make sure it's in the same format and spelled correctly.

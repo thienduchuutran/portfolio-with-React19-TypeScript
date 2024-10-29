@@ -5,6 +5,8 @@ interface IAppContext {
     setTheme: (v: ThemeContextType) => void;
 }
 type ThemeContextType = "light" | "dark"
+type LangType = "vi" | "en"
+
 
 const AppContext = createContext<IAppContext | null>(null);
 
@@ -19,6 +21,12 @@ export const AppContextProvider = ({children}: {children: React.ReactNode}) => {
         if (mode) {
             setTheme(mode);
             document.documentElement.setAttribute('data-bs-theme', mode);
+        }
+
+        const lang = localStorage.getItem("lang") as LangType;
+        if (lang) {
+            // setTheme(lang);
+            document.documentElement.setAttribute('data-bs-lang', lang);
         }
     }, [])
 
