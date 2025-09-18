@@ -14,6 +14,9 @@ export const AppContextProvider = ({children}: {children: React.ReactNode}) => {
     const [theme, setTheme] = useState<ThemeContextType>(() => {
         const initialTheme =
             (localStorage?.getItem("theme") ?? "dark") as ThemeContextType;
+                    // Apply theme immediately to prevent FOUC
+        document.documentElement.setAttribute('data-bs-theme', initialTheme);
+            console.log(initialTheme)
         return initialTheme;
     });
 
