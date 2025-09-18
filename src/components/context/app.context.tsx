@@ -14,14 +14,12 @@ export const AppContextProvider = ({children}: {children: React.ReactNode}) => {
     const [theme, setTheme] = useState<ThemeContextType>(() => {
         const initialTheme =
             (localStorage?.getItem("theme") ?? "dark") as ThemeContextType;
-                    // Apply theme immediately to prevent FOUC
-        document.documentElement.setAttribute('data-bs-theme', initialTheme);
-            console.log(initialTheme)
+        console.log(initialTheme)
         return initialTheme;
     });
 
-
     useEffect(() => {
+        // Apply theme immediately to prevent FOUC
         const mode = localStorage.getItem("theme") as ThemeContextType;
         if (mode) {
             setTheme(mode);
@@ -30,7 +28,6 @@ export const AppContextProvider = ({children}: {children: React.ReactNode}) => {
 
         const lang = localStorage.getItem("lang") as LangType;
         if (lang) {
-            // setTheme(lang);
             document.documentElement.setAttribute('data-bs-lang', lang);
         }
     }, [])
