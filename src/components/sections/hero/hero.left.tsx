@@ -20,7 +20,7 @@ const HeroLeft = (props: IProps) => {
     }
 
     const handleDownloadCV = () => {
-        openInNewTab('https://drive.google.com/file/d/1GJ7yY98J8jDF_LfV_LNUxchVYHXyvhaq/view?usp=sharing')
+        openInNewTab('https://drive.google.com/file/d/1EQEMMI6F5OeWlkrqwPVI6K84KSWFtcT8/view?usp=sharing')
     }
 
     return (

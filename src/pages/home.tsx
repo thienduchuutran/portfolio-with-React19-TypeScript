@@ -20,6 +20,15 @@ const HomePage = () => {
         expRef.current?.scrollIntoView({behavior: "smooth"})
     }
 
+    const openInNewTab = (url: string) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+    }
+
+    const handleDownloadCV = () => {
+        openInNewTab('https://drive.google.com/file/d/1EQEMMI6F5OeWlkrqwPVI6K84KSWFtcT8/view?usp=sharing')
+    }
+
     return (
         <div className="homepage-screen">
             <div style={{
@@ -49,6 +58,8 @@ const HomePage = () => {
                             <ResizeButton
                                 btnText={t("heroSection.cv")}
                                 btnIcons={<MdFileDownload />}
+                                onClick={handleDownloadCV}
+
                             />
                         </Col>
                     </Row>
