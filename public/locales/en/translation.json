@@ -2,7 +2,7 @@
     "appHeader": {
         "brand": "Duc Tran",
         "home": "Home",
-        "project": "Projects",
+        "project": "Pet Projects",
         "contact": "Contact",
         "about": "About"
     },
@@ -12,13 +12,15 @@
     },
     "introSection": {
         "about": "About me",
-        "vs": "/",
+        "vs": ",",
         "and": "and",
-        "heading1": "I'm a prospective CS student and currently at 3rd year in college with fundamental knowledge of Web Development. Growing to have deep understanding and be knowledgeable in OOP pattern, solving problems with algorithms and data structures.",
-        "heading2": "and the fullstack combo",
-        "heading3": "frameworks are my area of specialty.",
-        "heading4": "Let's connect!",
-        "heading5": "Whenever possible, I also apply my passion for developing products with"
+            "heading1": "This is a soon-to-be CS graduate with hands-on experience shipping production-ready code across the stack. Whether it’s",
+            "heading2": ", I’ve learned to deliver impact fast while keeping code clean and scalable",
+            "heading3": "I believe great engineers aren’t defined by one tech stack but by how quickly they adapt, and I bring that growth mindset to every project I take on.",
+            "heading4": "Let's connect!",
+        "heading5": "Whenever possible, I also apply my passion for developing products with",
+        "heading6": "through my previous software engineering internships at OneHope and New England Investment Consulting Group LLC",
+        "heading7": "or automated database pipelines"
     },
     "experience": {
         "title": "Experiences"
@@ -42,8 +44,8 @@
         "act2": "Soccer",
         "act3": "Solving Leetcode problems",
         "act4": "Cooking",
-        "flex": "Duc is currently in his third year and having 3.96/4.0 GPA",
-        "wish": "Duc is graduating in May 2026 and is actively seeking an internship opportunity for summer 2025",
+        "flex": "Duc is currently a last year college student and having 3.87/4.0 GPA with two software engineering internships",
+        "wish": "Duc is graduating in December 2025 and is actively seeking a full-time software engineer position in February 2026",
         "side": "Apart from coding, some other activities that Duc enjoys spending time",
         "verse": "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters",
         "destination": "Colossians 3:23",

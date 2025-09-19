@@ -13,6 +13,37 @@ export const EXPERIENCES = [
     {
         id: 1,
         title: {
+            vi: "Thực tập sinh kỹ sư phần mềm",
+            en: "Software Developer Intern"
+        },
+
+        company: {
+            vi: "OneHope",
+            en: "OneHope"
+        },
+        duration: {
+            vi: "Tháng 6/2025 - Tháng 8/2025",
+            en: "June 2025 - August 2025"
+        }
+    },
+    {
+        id: 2,
+        title: {
+            vi: "Thực tập sinh kỹ sư phần mềm",
+            en: "Software Engineer Intern"
+        },
+        company: {
+            vi: "New England Investment Consulting Group LLC",
+            en: "New England Investment Consulting Group LLC"
+        },
+        duration: {
+            vi: "Tháng 1/2025 - Tháng 5/2025",
+            en: "Jan 2025 - May 2025"
+        }
+    },
+    {
+        id: 3,
+        title: {
             vi: "Kỹ thuật viên hỗ trợ IT",
             en: "IT help desk technician"
         },
@@ -23,37 +54,6 @@ export const EXPERIENCES = [
         duration: {
             vi: "Tháng 9/2023 - Hiện tại",
             en: "September 2023 - Present"
-        }
-    },
-    {
-        id: 2,
-        title: {
-            vi: "Trợ lý ký túc xá",
-            en: "Resident Assistant"
-        },
-
-        company: {
-            vi: "Trường đại học Fitchburg State - Ban quản lý ký túc xá",
-            en: "Fitchburg State University - Housing & Residential Services"
-        },
-        duration: {
-            vi: "Tháng 1/2023 - Hiện tại",
-            en: "Jan 2023 - Present"
-        }
-    },
-    {
-        id: 3,
-        title: {
-            vi: "Dạy kèm Toán Giải tích",
-            en: "Calculus Tutor"
-        },
-        company: {
-            vi: "Trường đại học Fitchburg State - Trung tâm gia sư",
-            en: "Fitchburg State University - Tutor Center"
-        },
-        duration: {
-            vi: "Tháng 1/2023 - Tháng 5/2023",
-            en: "Jan 2023 - May 2023"
         }
     }
 ]

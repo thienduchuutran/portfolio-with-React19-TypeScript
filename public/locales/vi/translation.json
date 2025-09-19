@@ -2,7 +2,7 @@
     "appHeader": {
         "brand": "Thiên Đức",
         "home": "Trang chủ",
-        "project": "Dự án",
+        "project": "Dự án cá nhân",
         "contact": "Liên hệ",
         "about": "Về Đức"
     },
@@ -13,11 +13,13 @@
     "introSection": {
         "about": "Giới thiệu",
         "and": "và",
-        "heading1": "Đức là sinh viên năm 3 ngành Khoa học Máy tính, có kiến thức nền tảng về lập trình hướng đối tượng, giải thuật và cấu trúc dữ liệu. Đức ngày ngày dành thời gian nâng cao kiến thức chuyên sâu về phát triển web và công nghệ phần mềm.",
-        "heading2": "cùng bộ full-stack",
-        "heading3": "là thế mạnh của Đức",
+        "heading1": "Đức là một sinh viên Khoa học Máy tính sắp tốt nghiệp với kinh nghiệm thực tế trong việc xây dựng và triển khai các sản phẩm phần mềm chạy thực tế. Dù là",
+        "heading2": ", Đức đã học cách tạo ra giá trị nhanh chóng trong khi vẫn giữ cho soure code gọn gàng và dễ mở rộng, thông qua các kỳ",
+        "heading3": "Một nhà hiền triết vô danh từng nói: \"Một kỹ sư giỏi không được định nghĩa bởi một tech stack duy nhất, mà bởi khả năng thích ứng nhanh chóng\". Đức luôn mang theo tư duy phát triển bản thân đó trong mọi dự án mình tham gia",
         "heading4": "Rất mong được kết nối!",
-        "heading5": "Bất cứ khi nào có thể, tôi cũng áp dụng niềm đam mê phát triển sản phẩm của mình với"
+        "heading5": "Bất cứ khi nào có thể, tôi cũng áp dụng niềm đam mê phát triển sản phẩm của mình với",
+        "heading6": "thực tập tại OneHope và New England Investment Consulting Group LLC",
+        "heading7": "hay các hệ thống tự động hóa cơ sở dữ liệu"
     },
     "experience": {
         "title": "Kinh nghiệm làm việc"
@@ -34,15 +36,15 @@
         "description": "Đây là những dự án hoàn chỉnh gần nhất"
     },    
     "about": {
-        "title": "Biết Đức",
-        "who": "là ai",
+        "title": "Đức",
+        "who": "là ai?",
         "description1": "Thiên Đức hiện tại đang theo học chương trình cử nhân ngành Khoa Học Máy Tính tại đại học Fitchburg State, Fitchburg, Massachusetts",
         "act1": "Kinh Thánh",
         "act2": "Đá banh",
         "act3": "Luyện thuật toán trên Leetcode",
         "act4": "Nấu ăn",
-        "flex": "Đức hiện đang là sinh viên năm 3 và có GPA 3.96 trên thang 4.0",
-        "wish": "Đức sẽ tốt nghiệp vào tháng 5/2026 và hiện đang tìm kiếm cơ hội thực tập cho mùa hè 2025",
+        "flex": "Đức hiện đang là sinh viên năm cuối và có GPA 3.87 trên thang 4.0 với hai kinh nghiệm thực tập software engineering",
+        "wish": "Đức sẽ tốt nghiệp vào tháng 12/2025 và hiện đang tìm kiếm cơ hội làm software engineer full-time vào tháng 2/2026",
         "side": "Ngoài ngày ngày mò code thì Đức cũng có những sở thích khác",
         "verse": "Hễ làm việc gì, hãy hết lòng mà làm, như làm cho Chúa, chớ không phải làm cho người ta",
         "destination": "Cô-lô-se 3:23",

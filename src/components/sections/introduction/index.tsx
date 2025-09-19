@@ -24,15 +24,17 @@ const Introduction = () => {
                     <br />
                     <p>
                         {t("introSection.heading1")}
-                        <br />
-                        <br />
+                        {/* <br />
+                        <br /> */}
                         <i>
-                            <b className='text-pink-100'> JavaScript {t("introSection.vs")} TypeScript </b>
+                            <b className='text-pink-100'> React frontends {t("introSection.vs")} Node.js APIs {t("introSection.heading7")}</b>
                         </i>
                         {t("introSection.heading2")}
                         <i>
-                            <b className='text-pink-100'> ReactJS - Node.js {t("introSection.vs")} ExpressJS {t("introSection.vs")} NestJS </b>
+                            <b className='text-pink-100'> {t("introSection.heading6")}</b>
                         </i>
+                        <br />
+                        <br />
                         {t("introSection.heading3")} &nbsp;
                         <br/>
                         <br/>
