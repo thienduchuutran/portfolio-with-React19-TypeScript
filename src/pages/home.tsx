@@ -26,7 +26,7 @@ const HomePage = () => {
     }
 
     const handleDownloadCV = () => {
-        openInNewTab('https://drive.google.com/file/d/1EQEMMI6F5OeWlkrqwPVI6K84KSWFtcT8/view?usp=sharing')
+        openInNewTab('/resume.pdf')
     }
 
     return (
