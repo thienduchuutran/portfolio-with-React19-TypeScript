@@ -8,7 +8,7 @@ interface Options {
 export const useMagnetic = <T extends HTMLElement>(
     options: Options = {}
 ) => {
-    const { radius = 80, strength = 0.35 } = options; // activation field and fraction of cursor
+    const { radius = 120, strength = 0.95 } = options; // activation field and fraction of cursor
     const ref = useRef<T>(null);
 
     useEffect(() => {
@@ -32,8 +32,8 @@ export const useMagnetic = <T extends HTMLElement>(
         const tick = () => {
             //exponential-smoothing lerp
             //each frame the current moves 15% of the remaining distance toward target
-            currentX += (targetX - currentX) * 0.15;
-            currentY += (targetY - currentY) * 0.15;
+            currentX += (targetX - currentX) * 0.3;
+            currentY += (targetY - currentY) * 0.3;
             el.style.transform = `translate(${currentX}px, ${currentY}px)`;
 
             //if the element is close enough to the target, stop the animation

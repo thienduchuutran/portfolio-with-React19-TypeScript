@@ -68,11 +68,13 @@ const HeroLeft = (props: IProps) => {
                         border: "1px solid var(--border-hero-right)",
                         color: "var(--text-white-1)"
                     }}
+                    magnetic={true}
                 />
                 <ResizeButton
                     btnText={t("heroSection.cv")}
                     btnIcons={<MdFileDownload />}
                     onClick={handleDownloadCV}
+                    magnetic={true}
                 />
 
             </div>
