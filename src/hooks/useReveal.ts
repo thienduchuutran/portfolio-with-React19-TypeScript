@@ -22,6 +22,23 @@ export const useReveal = <T extends HTMLElement>(options: Options = {}) => {
             return;
         }
 
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setIsVisible(true);
+                        if (once) observer.unobserve(entry.target); // stop watching; work is done
+                    } else if (!once) {
+                        setIsVisible(false); // re-hide if the user scrolls it back off-screen
+                    }
+                });
+            },
+            { threshold, rootMargin }
+        );
+
+        observer.observe(el);
+        return () => observer.disconnect(); // cleanup on unmount or option change
+
     }, [threshold, rootMargin, once]);
 
     return { ref, isVisible };
