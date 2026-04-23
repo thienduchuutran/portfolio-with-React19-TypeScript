@@ -8,7 +8,7 @@ interface Options {
 
 export const useReveal = <T extends HTMLElement>(options: Options = {}) => {
     //shrinks the effective viewport by 10% on the bottom only
-    const { threshold = 0.15, rootMargin = "0px 0px -10% 0px", once = true } = options;
+    const { threshold = 0.15, rootMargin = "0px 0px -10% 0px", once = false } = options;
     const ref = useRef<T>(null);
     const [isVisible, setIsVisible] = useState(false); //rerender component when visibility flips to apply CSS class
 

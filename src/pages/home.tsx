@@ -10,14 +10,19 @@ import Divider from "@/components/sections/divider";
 import Experience from "components/sections/experience";
 import Skill from "components/sections/skill";
 import { useRef } from "react";
+import { useReveal } from "@/hooks/useReveal";
 
 const HomePage = () => {
     const { t } = useTranslation();
 
     const expRef = useRef<HTMLElement>(null) //null here is initial state
 
+    const introReveal = useReveal<HTMLElement>();
+    const expReveal = useReveal<HTMLElement>();
+    const skillReveal = useReveal<HTMLElement>();
+
     const scrollToExperienceSection = () => {
-        expRef.current?.scrollIntoView({behavior: "smooth"})
+        expRef.current?.scrollIntoView({ behavior: "smooth" })
     }
 
     const openInNewTab = (url: string) => {
@@ -65,19 +70,32 @@ const HomePage = () => {
                     </Row>
                 </Container>
             </section>
-            <section>
+            <section
+                ref={introReveal.ref}
+                className={`reveal ${introReveal.isVisible ? "is-visible" : ""}`}
+            >
                 <Container>
                     <Introduction />
                 </Container>
             </section>
             <Divider />
-            <section ref={expRef}>
+            <section
+                ref={(node) => {
+                    //one DOM node, two refs: React 19 marks RefObject.current readonly, so cast to write
+                    (expRef as { current: HTMLElement | null }).current = node;
+                    (expReveal.ref as { current: HTMLElement | null }).current = node;
+                }}
+                className={`reveal ${expReveal.isVisible ? "is-visible" : ""}`}
+            >
                 <Container >
                     <Experience />
                 </Container>
             </section>
             <Divider />
-            <section>
+            <section
+                ref={skillReveal.ref}
+                className={`reveal ${skillReveal.isVisible ? "is-visible" : ""}`}
+            >
                 <Container>
                     <Skill />
                 </Container>
