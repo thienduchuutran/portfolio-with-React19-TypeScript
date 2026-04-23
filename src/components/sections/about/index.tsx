@@ -107,7 +107,7 @@ const About = () => {
                         // https://github.com/airbnb/lottie-web/issues/2070
                         animationPath={JSON.parse(CONTACT_LOTTIE)}
                     />
-                    <h4 className="text-center">thienductranhuu2784@gmail.com</h4>
+                    <h4 className="text-center">titus.swe@gmail.com</h4>
                 </Col>
             </Row>
             <div className="mb-5"></div>

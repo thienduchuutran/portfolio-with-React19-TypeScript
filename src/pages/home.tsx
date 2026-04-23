@@ -46,12 +46,12 @@ const HomePage = () => {
                     style={{ position: "relative" }}
                 >
                     <Row>
-                        <Col className="d-none d-md-block" md={6}>
+                        <Col md={6}>
                             <HeroLeft
                                 scrollToExperienceSection={scrollToExperienceSection}
                             />
                         </Col>
-                        <Col md={6}>
+                        <Col md={6} className="d-none d-md-block">
                             <HeroRight />
                         </Col>
                         <Col xs={12} className="d-md-none d-flex mt-4 justify-content-center">
