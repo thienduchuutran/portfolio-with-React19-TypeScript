@@ -1,11 +1,11 @@
 {
-  "name": "react-portfolio-hoidanit",
+  "name": "react-portfolio-duc",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "author": {
-    "name": "Hỏi Dân IT vs Eric",
-    "url": "https://hoidanit.vn"
+    "name": "Duc",
+    "url": "https://ducportfolio.vercel.app/"
   },
   "scripts": {
     "dev": "vite",

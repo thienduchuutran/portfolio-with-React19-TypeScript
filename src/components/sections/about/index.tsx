@@ -42,7 +42,7 @@ const About = () => {
                     <div>
                         <p className="text-center brand-red">{t("about.verse")}</p>
                         <p className="text-center brand-red">--{t("about.destination")} &#10013;</p>
-                        
+
                     </div>
                 </Col >
                 <Col md={6} xs={12} className="d-flex align-items-center justify-content-center">
@@ -71,7 +71,7 @@ const About = () => {
                                 <div className="p-3 relative">
                                     <div className="experience-container">
                                         <div className="duration-text">
-                                            <p>2022-2025</p>
+                                            <p>2022-2026</p>
                                         </div>
                                         <div className="details">
                                             <div className="icon">

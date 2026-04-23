@@ -10,11 +10,10 @@ type LangType = "vi" | "en"
 
 const AppContext = createContext<IAppContext | null>(null);
 
-export const AppContextProvider = ({children}: {children: React.ReactNode}) => {
+export const AppContextProvider = ({ children }: { children: React.ReactNode }) => {
     const [theme, setTheme] = useState<ThemeContextType>(() => {
         const initialTheme =
             (localStorage?.getItem("theme") ?? "dark") as ThemeContextType;
-        console.log(initialTheme)
         return initialTheme;
     });
 

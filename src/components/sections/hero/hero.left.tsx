@@ -7,7 +7,7 @@ import { APP_DATA } from 'helpers/data';
 import { MdFileDownload } from "react-icons/md";
 import { AiFillFire } from "react-icons/ai";
 
-interface IProps{
+interface IProps {
     scrollToExperienceSection: () => void
 }
 const HeroLeft = (props: IProps) => {
@@ -41,7 +41,7 @@ const HeroLeft = (props: IProps) => {
                         "Computer Science student",
                         "Software Engineer",
                         "3.87 GPA holder",
-                        "Summa Cum Laude 2025",
+                        "Summa Cum Laude 2026",
                     ],
                     autoStart: true,
                     loop: true,
@@ -52,11 +52,11 @@ const HeroLeft = (props: IProps) => {
             <div
                 className="mt-md-6 mt-3 mb-md-5 mb-2"
             >
-                    <SocialMedia
-                        github={APP_DATA.GITHUB_URL}
-                        linkedin={APP_DATA.LINKEDIN_URL}
-                        gmail={APP_DATA.GMAIL_URL}
-                    />
+                <SocialMedia
+                    github={APP_DATA.GITHUB_URL}
+                    linkedin={APP_DATA.LINKEDIN_URL}
+                    gmail={APP_DATA.GMAIL_URL}
+                />
             </div>
             <div className="d-md-flex d-none gap-4">
                 <ResizeButton

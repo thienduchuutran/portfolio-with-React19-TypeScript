@@ -47,7 +47,7 @@ const HomePage = () => {
                 >
                     <Row>
                         <Col className="d-none d-md-block" md={6}>
-                            <HeroLeft 
+                            <HeroLeft
                                 scrollToExperienceSection={scrollToExperienceSection}
                             />
                         </Col>

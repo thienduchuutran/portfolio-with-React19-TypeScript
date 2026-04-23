@@ -71,7 +71,7 @@ export const PROJECTS = [
             en: 'Guests and signed-in users can view clinics, specialties and doctors information, and book appointments with doctors. Doctors can schedule available times for appointments. Admin can Create, Update and Delete doctors, specialties and clinics data.'
         },
         githubLink: "https://github.com/thienduchuutran/firstFullStackProject-BookingCare.git",
-        demoLink: "https://hoidanit.vn/khoa-hoc/react-ultimate-react-co-ban-tu-z-toi-a-640b50b96cc592d780aab976.html"
+        // demoLink: "https://hoidanit.vn/khoa-hoc/react-ultimate-react-co-ban-tu-z-toi-a-640b50b96cc592d780aab976.html"
     },
     {
         id: 2,
@@ -85,7 +85,7 @@ export const PROJECTS = [
             en: 'Guests and signed-in users can view job posts, companies hiring, and filter job posts based on skills. HR can view and update application status. Admin has full authorities on user authorization.'
         },
         githubLink: "https://github.com/thienduchuutran/gettingStartedWithNestJS",
-        demoLink: "https://hoidanit.vn/khoa-hoc/nestjs-voi-typescript-mongodb-sieu-de-64686ec6fb456bbb90663dd6.html"
+        // demoLink: "https://hoidanit.vn/khoa-hoc/nestjs-voi-typescript-mongodb-sieu-de-64686ec6fb456bbb90663dd6.html"
     },
 ]
 
@@ -106,6 +106,7 @@ export const SKILLS_DATA = [
     'PostgreSQL',
     'Git',
     'Docker',
+    'Linux'
   ]
   
   // Choose your skills from below. Make sure it's in the same format and spelled correctly.
