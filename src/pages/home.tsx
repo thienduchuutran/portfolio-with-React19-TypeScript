@@ -17,6 +17,7 @@ const HomePage = () => {
 
     const expRef = useRef<HTMLElement>(null) //null here is initial state
 
+    const heroReveal = useReveal<HTMLElement>();
     const introReveal = useReveal<HTMLElement>();
     const expReveal = useReveal<HTMLElement>();
     const skillReveal = useReveal<HTMLElement>();
@@ -46,7 +47,10 @@ const HomePage = () => {
                 zIndex: 0
             }}>
             </div>
-            <section className="mt-md-7 mt-2" >
+            <section
+                ref={heroReveal.ref}
+                className={`mt-md-7 mt-2 reveal ${heroReveal.isVisible ? "is-visible" : ""}`}
+            >
                 <Container
                     style={{ position: "relative" }}
                 >

@@ -15,11 +15,15 @@ import { useReveal } from "@/hooks/useReveal";
 type TLanguage = "vi" | "en"
 const About = () => {
     const { t, i18n } = useTranslation();
+    const introReveal = useReveal<HTMLDivElement>();
     const educationReveal = useReveal<HTMLDivElement>();
     const connectReveal = useReveal<HTMLDivElement>();
     return (
         <>
-            <Row>
+            <Row
+                ref={introReveal.ref}
+                className={`reveal ${introReveal.isVisible ? "is-visible" : ""}`}
+            >
                 <Col md={6} xs={12}>
                     <h3 className="text-center mb-md-5 mb-2">{t("about.title")}<span className="brand-red"> {t("about.who")}</span> </h3>
                     <div>
