@@ -10,10 +10,13 @@ import Divider from "@/components/sections/divider";
 import { APP_DATA } from "helpers/data";
 import SocialMedia from "components/sections/social.media";
 import { useTranslation } from "react-i18next";
+import { useReveal } from "@/hooks/useReveal";
 
 type TLanguage = "vi" | "en"
 const About = () => {
     const { t, i18n } = useTranslation();
+    const educationReveal = useReveal<HTMLDivElement>();
+    const connectReveal = useReveal<HTMLDivElement>();
     return (
         <>
             <Row>
@@ -52,7 +55,10 @@ const About = () => {
                 </Col>
             </Row>
 
-            <Row>
+            <Row
+                ref={educationReveal.ref}
+                className={`reveal ${educationReveal.isVisible ? "is-visible" : ""}`}
+            >
                 <Col md={6} xs={12}
                     className="d-none d-md-flex align-items-center justify-content-center mt-md-5 mt-3"
                 >
@@ -91,7 +97,10 @@ const About = () => {
             </Row>
 
             <Divider />
-            <Row>
+            <Row
+                ref={connectReveal.ref}
+                className={`reveal ${connectReveal.isVisible ? "is-visible" : ""}`}
+            >
                 <Col md={6} xs={12} className=" mt-md-5 mt-3">
                     <h3 className="mb-md-5 mb-2">{t("about.connect")}</h3>
                     <SocialMedia
