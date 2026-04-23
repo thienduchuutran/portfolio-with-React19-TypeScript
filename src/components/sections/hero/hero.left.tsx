@@ -6,6 +6,8 @@ import ResizeButton from "components/sections/resize.button";
 import { APP_DATA } from 'helpers/data';
 import { MdFileDownload } from "react-icons/md";
 import { AiFillFire } from "react-icons/ai";
+import { useScrambleText } from "@/hooks/useScrambleText";
+
 
 interface IProps {
     scrollToExperienceSection: () => void
@@ -13,6 +15,7 @@ interface IProps {
 const HeroLeft = (props: IProps) => {
 
     const { t } = useTranslation();
+    const scrambledName = useScrambleText(t("appHeader.brand"));
 
     const openInNewTab = (url: string) => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
@@ -33,7 +36,7 @@ const HeroLeft = (props: IProps) => {
             </h3>
             <h3 style={{ paddingTop: 10, paddingBottom: 5 }}>
                 I'm&nbsp;
-                <strong className="brand-red">{t("appHeader.brand")}</strong>
+                <strong className="brand-red">{scrambledName}</strong>
             </h3>
             <Typewriter
                 options={{
