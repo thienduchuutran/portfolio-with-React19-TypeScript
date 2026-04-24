@@ -71,7 +71,7 @@ export const PROJECTS = [
             en: 'This project solves a core identity problem for the organization by creating a high-touch, customized digital home that goes beyond generic social media. It fosters a closer community space for sharing mission-critical stories and formal announcements'
         },
         githubLink: "https://github.com/thienduchuutran/church-website.git",
-        demoLink: "vgomne.ddns.net"
+        demoLink: "https://vgomne.ddns.net"
     },
     {
         id: 2,
@@ -85,7 +85,7 @@ export const PROJECTS = [
             en: 'This isn\'t just a listing site; it\'s a spatial visualization tool. I transformed raw, cryptic MLS RETS data (80+ columns) into a user-friendly analytics dashboard. It features a custom AI-integrated chat widget (Gemini API) that understands property context to help users find insights faster.'
         },
         githubLink: "https://github.com/thienduchuutran/Homelytics",
-        demoLink: "homelytics-iota.vercel.app/houses"
+        demoLink: "https://homelytics-iota.vercel.app/houses"
     },
 ]
 
