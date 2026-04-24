@@ -63,29 +63,29 @@ export const PROJECTS = [
         id: 1,
         imgPath: reactUltimateImg,
         title: {
-            vi: "Website đặt lịch khám bác sĩ đa ngôn ngữ",
-            en: "Multi-Language Healthcare Booking Website"
+            vi: "Nền tảng cộng đồng Hội Thánh",
+            en: "Church Community Ecosystem"
         },
         description: {
-            vi: 'Khách và người dùng đã đăng nhập có thể xem thông tin về các phòng khám, chuyên khoa và bác sĩ, đồng thời đặt lịch hẹn với bác sĩ. Bác sĩ có thể lên lịch các khung giờ có sẵn cho các cuộc hẹn. Quản trị viên có thể tạo, cập nhật và xóa dữ liệu về bác sĩ, chuyên khoa và phòng khám.',
-            en: 'Guests and signed-in users can view clinics, specialties and doctors information, and book appointments with doctors. Doctors can schedule available times for appointments. Admin can Create, Update and Delete doctors, specialties and clinics data.'
+            vi: 'Dự án này giải quyết một vấn đề cốt lõi về bản sắc của tổ chức bằng cách tạo ra một “ngôi nhà số” được tùy chỉnh và chăm chút kỹ lưỡng, vượt xa các nền tảng mạng xã hội thông thường. Nó giúp xây dựng một không gian cộng đồng gắn kết hơn để chia sẻ những câu chuyện quan trọng liên quan đến sứ mệnh và các thông báo chính thức.',
+            en: 'This project solves a core identity problem for the organization by creating a high-touch, customized digital home that goes beyond generic social media. It fosters a closer community space for sharing mission-critical stories and formal announcements'
         },
-        githubLink: "https://github.com/thienduchuutran/firstFullStackProject-BookingCare.git",
-        // demoLink: "https://hoidanit.vn/khoa-hoc/react-ultimate-react-co-ban-tu-z-toi-a-640b50b96cc592d780aab976.html"
+        githubLink: "https://github.com/thienduchuutran/church-website.git",
+        demoLink: "vgomne.ddns.net"
     },
     {
         id: 2,
         imgPath: nestImg,
         title: {
-            vi: "Website đăng tin tuyển dụng",
-            en: "Job Posting Website"
+            vi: "Phân tích Bất động sản California (Homelytics)",
+            en: "California Real Estate Analytics (Homelytics)"
         },
         description: {
-            vi: 'Khách và người dùng đã đăng nhập có thể xem các tin tuyển dụng, công ty đang tuyển dụng và lọc tin tuyển dụng dựa trên kỹ năng. Nhân sự có thể xem và cập nhật trạng thái ứng tuyển. Quản trị viên có toàn quyền kiểm soát về cấp quyền người dùng.',
-            en: 'Guests and signed-in users can view job posts, companies hiring, and filter job posts based on skills. HR can view and update application status. Admin has full authorities on user authorization.'
+            vi: 'Đây không chỉ là một trang web đăng tin bất động sản; nó là một công cụ trực quan hóa không gian. Tôi đã chuyển đổi dữ liệu MLS RETS thô và khó hiểu với hơn 80 cột thành một dashboard phân tích thân thiện với người dùng. Nền tảng này có một tiện ích chat tích hợp AI tùy chỉnh sử dụng Gemini API, có khả năng hiểu ngữ cảnh bất động sản để giúp người dùng tìm ra thông tin quan trọng nhanh hơn.',
+            en: 'This isn\'t just a listing site; it\'s a spatial visualization tool. I transformed raw, cryptic MLS RETS data (80+ columns) into a user-friendly analytics dashboard. It features a custom AI-integrated chat widget (Gemini API) that understands property context to help users find insights faster.'
         },
-        githubLink: "https://github.com/thienduchuutran/gettingStartedWithNestJS",
-        // demoLink: "https://hoidanit.vn/khoa-hoc/nestjs-voi-typescript-mongodb-sieu-de-64686ec6fb456bbb90663dd6.html"
+        githubLink: "https://github.com/thienduchuutran/Homelytics",
+        demoLink: "homelytics-iota.vercel.app/houses"
     },
 ]
 
