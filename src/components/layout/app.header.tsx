@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -16,6 +17,7 @@ type LangType = "vi" | "en"
 function AppHeader() {
     const { theme, setTheme } = useCurrentApp();
     const { t, i18n } = useTranslation();
+    const [expanded, setExpanded] = useState(false);
 
     const handleMode = (mode: ThemeContextType) => {
         localStorage.setItem("theme", mode);
@@ -42,6 +44,8 @@ function AppHeader() {
         <Navbar
             data-bs-theme={theme}
             expand="lg"
+            expanded={expanded}
+            onToggle={setExpanded}
             className="bg-body-tertiary"
             style={{ zIndex: 10,
                 position: 'sticky',
@@ -57,9 +61,9 @@ function AppHeader() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <NavLink className="nav-link" to="/">{t("appHeader.home")}</NavLink>
-                        <NavLink className="nav-link" to="/project"> {t("appHeader.project")}</NavLink>
-                        <NavLink className="nav-link" to="/about">{t("appHeader.about")}</NavLink>
+                        <NavLink className="nav-link" to="/" onClick={() => setExpanded(false)}>{t("appHeader.home")}</NavLink>
+                        <NavLink className="nav-link" to="/project" onClick={() => setExpanded(false)}>{t("appHeader.project")}</NavLink>
+                        <NavLink className="nav-link" to="/about" onClick={() => setExpanded(false)}>{t("appHeader.about")}</NavLink>
                     </Nav>
                     <Nav className="ms-auto">
                         <div className='nav-link' style={{ cursor: "pointer" }}>
