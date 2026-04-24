@@ -1,4 +1,4 @@
-# Duc Tran — Personal Portfolio
+# Duc Tran | Personal Portfolio
 
 This portfolio was built on top of a starter template by [Hỏi Dân IT (Eric)](https://hoidanit.vn/), not from scratch. The original template provided the base layout, routing, i18n setup, and component structure.
 
