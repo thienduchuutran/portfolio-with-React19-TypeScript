@@ -31,7 +31,7 @@ function ProjectCard(props: IProps) {
                             GitHub
                         </Button>
 
-                        {/* <Button
+                        <Button
                             variant="primary"
                             href={props.demoLink}
                             target="_blank"
@@ -39,7 +39,7 @@ function ProjectCard(props: IProps) {
                         >
                             <CgWebsite /> &nbsp;
                             {"Demo"}
-                        </Button> */}
+                        </Button>
 
                     </div>
                 </div>
