@@ -11,6 +11,8 @@ import Experience from "components/sections/experience";
 import Skill from "components/sections/skill";
 import { useRef } from "react";
 import { useReveal } from "@/hooks/useReveal";
+import { useScrollParallax } from "@/hooks/useScrollParallax";
+import { useLenis } from "lenis/react";
 
 const HomePage = () => {
     const { t } = useTranslation();
@@ -22,8 +24,17 @@ const HomePage = () => {
     const expReveal = useReveal<HTMLElement>();
     const skillReveal = useReveal<HTMLElement>();
 
+    // Background drifts down slower than scroll -> reads as a "deep" layer behind the hero.
+    const bgParallaxRef = useScrollParallax<HTMLDivElement>({ speed: 0.4 });
+
+    const lenis = useLenis();
+
     const scrollToExperienceSection = () => {
-        expRef.current?.scrollIntoView({ behavior: "smooth" })
+        if (lenis && expRef.current) {
+            lenis.scrollTo(expRef.current);
+        } else {
+            expRef.current?.scrollIntoView({ behavior: "smooth" });
+        }
     }
 
     const openInNewTab = (url: string) => {
@@ -37,15 +48,18 @@ const HomePage = () => {
 
     return (
         <div className="homepage-screen">
-            <div style={{
-                backgroundImage: `url(${bg})`,
-                width: "100%",
-                height: 500,
-                position: "absolute",
-                top: 0,
-                backgroundRepeat: "no-repeat",
-                zIndex: 0
-            }}>
+            <div
+                ref={bgParallaxRef}
+                style={{
+                    backgroundImage: `url(${bg})`,
+                    width: "100%",
+                    height: 500,
+                    position: "absolute",
+                    top: 0,
+                    backgroundRepeat: "no-repeat",
+                    zIndex: 0,
+                    willChange: "transform",
+                }}>
             </div>
             <section
                 ref={heroReveal.ref}

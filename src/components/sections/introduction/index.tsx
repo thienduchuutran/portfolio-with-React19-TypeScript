@@ -3,9 +3,13 @@ import Tilt from "react-parallax-tilt";
 import avatarImg from "assets/duclogo.jpg";
 import './introduction.scss';
 import { useTranslation } from 'react-i18next';
+import { useScrollParallax } from '@/hooks/useScrollParallax';
 
 const Introduction = () => {
     const { t, i18n } = useTranslation();
+
+    // Foreground accent drifts slightly UP relative to scroll -> reads as a "close" layer.
+    const aboutLabelRef = useScrollParallax<HTMLDivElement>({ speed: -0.08 });
 
     return (
         <section className='introduction-section my-5 my-md-7' style={{ position: "relative" }}>
@@ -53,7 +57,7 @@ const Introduction = () => {
                     </Tilt>
                 </Col>
             </Row>
-            <div className="about-container d-none d-md-flex">
+            <div ref={aboutLabelRef} className="about-container d-none d-md-flex">
                 <span className="about-label">{t("introSection.about")}</span>
                 <span className="vertical-line"></span>
             </div>
